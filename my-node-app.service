@@ -1,12 +1,6 @@
-[Unit]
-Description=My Mail Sender App
-After=network.target
-[Service]
 ExecStart=/usr/bin/node /home/ec2-user/nodeemail/src/server.js
 WorkingDirectory=/home/ec2-user/nodeemail/src
 Restart=always
 User=ec2-user
 Environment=PATH=/usr/bin:/usr/local/bin
 Environment=NODE_ENV=production
-[Install]
-WantedBy=multi-user.target
