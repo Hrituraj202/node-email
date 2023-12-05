@@ -6,7 +6,7 @@ app.use(express.urlencoded({extended: true}))
 
 initRoutes(app)
 
-const port = 8017
+const port = 80
 app.listen(port, () => {
   console.log(`Hello, I'm running at localhost:${port}/`)
 })
