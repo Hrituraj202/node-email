@@ -18,3 +18,5 @@ sudo nano /etc/systemd/system/my-node-app.service
 sudo systemctl enable my-node-app
 sudo systemctl start my-node-app
 sudo systemctl status my-node-app
+
+sudo kill -9 `sudo lsof -t -i:8080`

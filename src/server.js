@@ -1,8 +1,10 @@
 const express = require('express')
-const app = express()
 const initRoutes = require('./routes/web')
+const bodyParser = require('body-parser');
 
-app.use(express.urlencoded({extended: true}))
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 initRoutes(app)
 
