@@ -17,3 +17,4 @@ $ node src/server.js
 sudo nano /etc/systemd/system/my-node-app.service
 sudo systemctl enable my-node-app
 sudo systemctl start my-node-app
+sudo systemctl status my-node-app
